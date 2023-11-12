@@ -8,6 +8,7 @@ const RedirectLinks = {
   "/twitter": "https://x.com/genadrop",
   "/telegram": "https://t.me/GenaDrop",
   "/wallet": "https://wallet.genadrop.xyz",
+  "/mintbase-figma": "https://www.figma.com/file/PMmovNI2wfyjVrJThDu0HB/MINTBASE-OPEN?type=design&node-id=0-1&mode=design&t=VWEnFpgaA9TDHkVY-0",
 
 };
 
