@@ -39,7 +39,7 @@ const Home = (props) => {
                   Code
                 </a>
                 <a
-                  href="/code"
+                  href="/wallet"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="home-nav21"
