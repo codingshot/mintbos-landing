@@ -167,6 +167,22 @@ const Home = (props) => {
                   Learn more
                 </a>
               </div>
+              <div className="home-item2">
+                <div className="home-container6">
+                  <span className="home-text2 heading3">Mintbase Feature Parity</span>
+                  <span className="home-free-plan-description2">
+                    We are building all of Mintbase.xyz feature on BOS (decentralized + composable on-chain front ends). Using NEAR APIs, our SDK, + UI kits, & Mintbase GraphQL we allow for people to explore + buy NFTs, see activity, and manage storefronts.
+                  </span>
+                </div>
+                <a
+                  href="/milestone3"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-app1 button"
+                >
+                  See Features
+                </a>
+              </div>
               <div className="home-item1">
                 <div className="home-container5">
                   <span className="home-text1 heading3">Social + DAO + TG Functionality</span>
@@ -183,22 +199,7 @@ const Home = (props) => {
                   BOS up
                 </a>
               </div>
-              <div className="home-item2">
-                <div className="home-container6">
-                  <span className="home-text2 heading3">Minbtase Feature Parity</span>
-                  <span className="home-free-plan-description2">
-                    We are building all of Mintbase.xyz feature on BOS (decentralized + composable on-chain front ends). Using NEAR APIs, our SDK, + UI kits, & Mintbase GraphQL we allow for people to explore + buy NFTs, see activity, and manage storefronts.
-                  </span>
-                </div>
-                <a
-                  href="/milestone3"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="home-app1 button"
-                >
-                  See Features
-                </a>
-              </div>
+
             </div>
           </div>
         </div>
