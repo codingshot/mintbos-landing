@@ -164,39 +164,39 @@ const Home = (props) => {
                   rel="noreferrer noopener"
                   className="home-github button"
                 >
-                  Open Github
+                  Learn more
                 </a>
               </div>
               <div className="home-item1">
                 <div className="home-container5">
-                  <span className="home-text1 heading3">Backlog</span>
+                  <span className="home-text1 heading3">Social + DAO + TG Functionality</span>
                   <span className="home-free-plan-description1">
-                    See whats on the backlog and start contributing today
+                    We are leveraging BOS to easily enable DAO functionality for deploying + managing storefront, minting + buying NFTs. We are also using social DB to add social graph functionality to profiles + storefronts. We are also adding listing NFTs to our telegram DropWallet powered by metatransactions.
                   </span>
                 </div>
                 <a
-                  href="/backlog"
+                  href="/milestone2"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="home-backlog button"
                 >
-                  View Backlog
+                  BOS up
                 </a>
               </div>
               <div className="home-item2">
                 <div className="home-container6">
-                  <span className="home-text2 heading3">App</span>
+                  <span className="home-text2 heading3">Minbtase Feature Parity</span>
                   <span className="home-free-plan-description2">
-                    Check out the BOS app and directly fork from the interface
+                    We are building all of Mintbase.xyz feature on BOS (decentralized + composable on-chain front ends). Using NEAR APIs, our SDK, + UI kits, & Mintbase GraphQL we allow for people to explore + buy NFTs, see activity, and manage storefronts.
                   </span>
                 </div>
                 <a
-                  href="/app"
+                  href="/milestone3"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="home-app1 button"
                 >
-                  Launch App
+                  See Features
                 </a>
               </div>
             </div>
