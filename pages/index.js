@@ -9,12 +9,12 @@ const Home = (props) => {
           <title>Mintbos</title>
           <meta
             name="description"
-            content="Mintbase meets BOS. Decentralized front ends meet NFT infrastructure on NEAR."
+            content="Mintbase meets BOS. Decentralized front ends meets NFT infrastructure on NEAR."
           />
           <meta property="og:title" content="Mintbos" />
           <meta
             property="og:description"
-            content="Mintbase meets BOS. Decentralized front ends meet NFT infrastructure on NEAR."
+            content="Mintbase meets BOS. Decentralized front ends meets NFT infrastructure on NEAR."
           />
         </Head>
         <div className="home-header">
@@ -118,7 +118,7 @@ const Home = (props) => {
             <div className="home-container1">
               <img alt="image" src="/mintbos.svg" className="home-image2" />
               <span className="home-hero-sub-heading">
-                Decentralized front ends meet  NFT infrastructure on NEAR
+                Decentralized front ends meets NFT infrastructure on NEAR
               </span>
               <div className="home-btn-group">
                 <a
@@ -145,21 +145,21 @@ const Home = (props) => {
         <div className="home-pricing">
           <div className="home-build-blocks">
             <div className="home-container2">
-              <h2 className="home-build-heading heading2">Use &amp; Build</h2>
+              <h2 className="home-build-heading heading2">What We Are Building</h2>
               <span className="home-buld-subtitle">
-                Start building your own NFT marketplace on BOS today.
+                How we are further decentralizing mintbase stack
               </span>
             </div>
             <div className="home-container3">
               <div className="home-item">
                 <div className="home-container4">
-                  <span className="home-text heading3">Code</span>
+                  <span className="home-text heading3">BOS UI Kit + SDK + Monorepo</span>
                   <span className="home-free-plan-description">
-                    Check out our code and backlog
+                    We are building a BOS based UI Kit, and a BOS based SDK so people building front end marketplaces can add functianlity and their own themes across components. 
                   </span>
                 </div>
                 <a
-                  href="/code"
+                  href="/mileston1"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="home-github button"
