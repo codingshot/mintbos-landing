@@ -147,13 +147,13 @@ const Home = (props) => {
             <div className="home-container2">
               <h2 className="home-build-heading heading2">What We Are Building</h2>
               <span className="home-buld-subtitle">
-                How we are further decentralizing mintbase stack
+                How we are further decentralizing the Mintbase stack
               </span>
             </div>
             <div className="home-container3">
               <div className="home-item">
                 <div className="home-container4">
-                  <span className="home-text heading3">BOS UI Kit + SDK + Monorepo</span>
+                  <span className="home-text heading3">📦 BOS UI Kit + SDK + Monorepo</span>
                   <span className="home-free-plan-description">
                     We are building a BOS based UI Kit, and a BOS based SDK so people building front end marketplaces can add functianlity and their own themes across components. 
                   </span>
@@ -169,7 +169,7 @@ const Home = (props) => {
               </div>
               <div className="home-item2">
                 <div className="home-container6">
-                  <span className="home-text2 heading3">Mintbase Feature Parity</span>
+                  <span className="home-text2 heading3">🪞 Mintbase Feature Parity</span>
                   <span className="home-free-plan-description2">
                     We are building all of Mintbase.xyz feature on BOS (decentralized + composable on-chain front ends). Using NEAR APIs, our SDK, + UI kits, & Mintbase GraphQL we allow for people to explore + buy NFTs, see activity, and manage storefronts.
                   </span>
@@ -185,7 +185,7 @@ const Home = (props) => {
               </div>
               <div className="home-item1">
                 <div className="home-container5">
-                  <span className="home-text1 heading3">Social + DAO + TG Functionality</span>
+                  <span className="home-text1 heading3">👋 Social + DAO + TG Functionality</span>
                   <span className="home-free-plan-description1">
                     We are leveraging BOS to easily enable DAO functionality for deploying + managing storefront, minting + buying NFTs. We are also using social DB to add social graph functionality to profiles + storefronts. We are also adding listing NFTs to our telegram DropWallet powered by metatransactions.
                   </span>
