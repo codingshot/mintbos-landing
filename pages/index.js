@@ -175,7 +175,7 @@ const Home = (props) => {
                   </span>
                 </div>
                 <a
-                  href="/milestone3"
+                  href="/milestone2"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="home-app1 button"
@@ -191,7 +191,7 @@ const Home = (props) => {
                   </span>
                 </div>
                 <a
-                  href="/milestone2"
+                  href="/milestone3"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="home-backlog button"
