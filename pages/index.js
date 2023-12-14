@@ -147,7 +147,7 @@ const Home = (props) => {
             <div className="home-container2">
               <h2 className="home-build-heading heading2">What We Are Building</h2>
               <span className="home-buld-subtitle">
-                How we are further decentralizing the Mintbase stack
+                How we are further decentralizing the Mintbase stack. (Note we are still building and this is not live - check github)
               </span>
             </div>
             <div className="home-container3">
