@@ -130,13 +130,13 @@ const Home = (props) => {
                   Fork
                 </a>
                 <a
-                  href="/app"
+                  href="/backlog"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="home-hero-button2 button"
                 >
                   {' '}
-                  Launch App →
+                  Backlog →
                 </a>
               </div>
             </div>
