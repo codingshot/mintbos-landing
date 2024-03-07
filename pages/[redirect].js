@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 
 const RedirectLinks = {
-  "/app": "https://bos.genadrop.io",
-  "/code": "https://github.com/GenaDrop/mintbos/",
+  "/app": "https://near.social/bos.genadrop.near/widget/Mintbase.App.Index",
+  "/code-old": "https://github.com/GenaDrop/mintbos/",
+  "/code": "https://github.com/GenaDrop/genadrop-bos-monorepo/tree/main/apps/BosGenaDrop/widget/Mintbase",
   "/backlog": "https://github.com/orgs/GenaDrop/projects/2/views/2",
   "/docs": "",
   "/milestone1": "https://github.com/orgs/GenaDrop/projects/2/views/2?filterQuery=milestone%3A%22Announcement+%2B+SDK+%2B+UI+Kit%22",
