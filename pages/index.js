@@ -1,5 +1,5 @@
-import React from 'react'
-import Head from 'next/head'
+import React from "react";
+import Head from "next/head";
 
 const Home = (props) => {
   return (
@@ -56,6 +56,14 @@ const Home = (props) => {
                 >
                   App
                 </a>
+                <a
+                  href="/docs"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-register button"
+                >
+                  Docs
+                </a>
               </div>
             </div>
             <div data-thq="thq-burger-menu" className="home-burger-menu">
@@ -98,6 +106,14 @@ const Home = (props) => {
                   >
                     TG Wallet
                   </a>
+                  <a
+                    href="/docs"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="home-nav3"
+                  >
+                    Docs
+                  </a>
                 </nav>
                 <div className="home-buttons1">
                   <a
@@ -135,7 +151,7 @@ const Home = (props) => {
                   rel="noreferrer noopener"
                   className="home-hero-button2 button"
                 >
-                  {' '}
+                  {" "}
                   Backlog →
                 </a>
               </div>
@@ -145,21 +161,28 @@ const Home = (props) => {
         <div className="home-pricing">
           <div className="home-build-blocks">
             <div className="home-container2">
-              <h2 className="home-build-heading heading2">What We Are Building</h2>
+              <h2 className="home-build-heading heading2">
+                What We Are Building
+              </h2>
               <span className="home-buld-subtitle">
-                How we are further decentralizing the Mintbase stack. (Note we are still building and this is not live - check github)
+                How we are further decentralizing the Mintbase stack. (Note we
+                are still building and this is not live - check github)
               </span>
             </div>
             <div className="home-container3">
               <div className="home-item">
                 <div className="home-container4">
-                  <span className="home-text heading3">📦 BOS UI Kit + SDK + Monorepo</span>
+                  <span className="home-text heading3">
+                    📦 BOS SDK + Monorepo
+                  </span>
                   <span className="home-free-plan-description">
-                    We are building a BOS based UI Kit, and a BOS based SDK so people building front end marketplaces can add functianlity and their own themes across components. 
+                    We are building a BOS based a UI Kit, and a BOS based SDK so
+                    people building front end marketplaces can add functianlity
+                    and their own themes across components.
                   </span>
                 </div>
                 <a
-                  href="/mileston1"
+                  href="/docs"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="home-github button"
@@ -169,13 +192,20 @@ const Home = (props) => {
               </div>
               <div className="home-item2">
                 <div className="home-container6">
-                  <span className="home-text2 heading3">🪞 Mintbase Feature Parity</span>
+                  <span className="home-text2 heading3">
+                    🪞 Mintbase Feature Parity
+                  </span>
                   <span className="home-free-plan-description2">
-                    We are building all of Mintbase.xyz feature on BOS (decentralized + composable on-chain front ends). Using NEAR APIs, our SDK, + UI kits, & Mintbase GraphQL we allow for people to explore + buy NFTs, see activity, and manage storefronts.
+                    We are building all of Mintbase.xyz feature on BOS
+                    (decentralized + composable on-chain front ends). Using NEAR
+                    APIs, our SDK, + UI kits, & Mintbase GraphQL we allow for
+                    people to explore + buy NFTs, see activity, and manage
+                    storefronts.
                   </span>
                 </div>
                 <a
-                  href="/milestone2"
+                  // href="/milestone2"
+                  href="/backlog"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="home-app1 button"
@@ -185,13 +215,20 @@ const Home = (props) => {
               </div>
               <div className="home-item1">
                 <div className="home-container5">
-                  <span className="home-text1 heading3">👋 Social + DAO + TG Functionality</span>
+                  <span className="home-text1 heading3">
+                    👋 Social + DAO + TG Functionality
+                  </span>
                   <span className="home-free-plan-description1">
-                    We are leveraging BOS to easily enable DAO functionality for deploying + managing storefront, minting + buying NFTs. We are also using social DB to add social graph functionality to profiles + storefronts. We are also adding listing NFTs to our telegram DropWallet powered by metatransactions.
+                    We are leveraging BOS to easily enable DAO functionality for
+                    deploying + managing storefront, minting + buying NFTs. We
+                    are also using social DB to add social graph functionality
+                    to profiles + storefronts. We are also adding listing NFTs
+                    to our telegram DropWallet powered by metatransactions.
                   </span>
                 </div>
                 <a
-                  href="/milestone3"
+                  // href="/milestone3"
+                  href="/backlog"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="home-backlog button"
@@ -199,7 +236,6 @@ const Home = (props) => {
                   BOS up
                 </a>
               </div>
-
             </div>
           </div>
         </div>
@@ -215,7 +251,7 @@ const Home = (props) => {
                   rel="noreferrer noopener"
                   className="home-link"
                 >
-                  {' '}
+                  {" "}
                   Minority Programmers
                 </a>
                 <span> + 💧 </span>
@@ -299,7 +335,7 @@ const Home = (props) => {
           .home-nav1 {
             color: #ffffff;
             transition: 0.3s;
-            font-family: 'AUTHENTIC Sans 60';
+            font-family: "AUTHENTIC Sans 60";
             text-decoration: none;
           }
           .home-nav1:hover {
@@ -308,7 +344,7 @@ const Home = (props) => {
           .home-nav2 {
             color: #ffffff;
             transition: 0.3s;
-            font-family: 'AUTHENTIC Sans 60';
+            font-family: "AUTHENTIC Sans 60";
             margin-left: var(--dl-space-space-twounits);
             text-decoration: none;
           }
@@ -318,7 +354,7 @@ const Home = (props) => {
           .home-nav21 {
             color: rgb(255, 255, 255);
             transition: 0.3s;
-            font-family: 'AUTHENTIC Sans 60';
+            font-family: "AUTHENTIC Sans 60";
             margin-left: var(--dl-space-space-twounits);
             text-decoration: none;
           }
@@ -334,7 +370,7 @@ const Home = (props) => {
           .home-app {
             color: var(--dl-color-gray-white);
             transition: 0.3s;
-            font-family: 'AUTHENTIC Sans 60';
+            font-family: "AUTHENTIC Sans 60";
             font-weight: bold;
             border-color: #101223;
             border-width: 0px;
@@ -486,7 +522,7 @@ const Home = (props) => {
             color: var(--dl-color-gray-white);
             font-size: 18px;
             text-align: center;
-            font-family: 'AUTHENTIC Sans 60';
+            font-family: "AUTHENTIC Sans 60";
             line-height: 1.6;
           }
           .home-btn-group {
@@ -499,7 +535,7 @@ const Home = (props) => {
             color: var(--dl-color-gray-white);
             font-size: 18px;
             transition: 0.3s;
-            font-family: 'AUTHENTIC Sans 60';
+            font-family: "AUTHENTIC Sans 60";
             font-weight: bold;
             padding-top: 1.5rem;
             border-color: var(--dl-color-primary1-blue100);
@@ -519,7 +555,7 @@ const Home = (props) => {
           .home-hero-button2 {
             color: #c5d0ff;
             transition: 0.3s;
-            font-family: 'AUTHENTIC Sans 60';
+            font-family: "AUTHENTIC Sans 60";
             font-weight: bold;
             padding-top: var(--dl-space-space-unit);
             border-color: transparent;
@@ -562,7 +598,7 @@ const Home = (props) => {
           }
           .home-build-heading {
             color: rgb(255, 255, 255);
-            font-family: 'AUTHENTIC Sans 60';
+            font-family: "AUTHENTIC Sans 60";
             line-height: 1.6;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
@@ -570,7 +606,7 @@ const Home = (props) => {
             color: #c5d0ff;
             font-size: 18px;
             text-align: center;
-            font-family: 'AUTHENTIC Sans 60';
+            font-family: "AUTHENTIC Sans 60";
             line-height: 1.6;
           }
           .home-container3 {
@@ -611,7 +647,7 @@ const Home = (props) => {
           .home-text {
             color: rgb(255, 255, 255);
             font-style: normal;
-            font-family: 'Raleway';
+            font-family: "Raleway";
             font-weight: 300;
             text-transform: uppercase;
           }
@@ -622,7 +658,7 @@ const Home = (props) => {
           .home-github {
             color: var(--dl-color-gray-white);
             transition: 0.3s;
-            font-family: 'AUTHENTIC Sans 60';
+            font-family: "AUTHENTIC Sans 60";
             font-weight: bold;
             border-color: #000000;
             border-width: 0px;
@@ -669,7 +705,7 @@ const Home = (props) => {
           .home-text1 {
             color: rgb(255, 255, 255);
             font-style: normal;
-            font-family: 'Raleway';
+            font-family: "Raleway";
             font-weight: 300;
             text-transform: uppercase;
           }
@@ -682,7 +718,7 @@ const Home = (props) => {
           .home-backlog {
             color: var(--dl-color-gray-white);
             transition: 0.3s;
-            font-family: 'AUTHENTIC Sans 60';
+            font-family: "AUTHENTIC Sans 60";
             font-weight: bold;
             border-color: var(--dl-color-primary1-blue100);
             border-width: 0px;
@@ -729,14 +765,14 @@ const Home = (props) => {
           .home-text2 {
             color: rgb(255, 255, 255);
             font-style: normal;
-            font-family: 'Raleway';
+            font-family: "Raleway";
             font-weight: 300;
             text-transform: uppercase;
           }
           .home-free-plan-description2 {
             color: #c5d0ff;
             font-size: 16px;
-            font-family: 'Inter';
+            font-family: "Inter";
             font-weight: 400;
             line-height: 1.6;
             text-transform: none;
@@ -745,7 +781,7 @@ const Home = (props) => {
           .home-app1 {
             color: var(--dl-color-gray-white);
             transition: 0.3s;
-            font-family: 'AUTHENTIC Sans 60';
+            font-family: "AUTHENTIC Sans 60";
             font-weight: bold;
             border-color: var(--dl-color-primary1-blue100);
             border-width: 0px;
@@ -803,7 +839,7 @@ const Home = (props) => {
           }
           .home-text3 {
             color: var(--dl-color-secondary-gray500);
-            font-family: 'AUTHENTIC Sans 60';
+            font-family: "AUTHENTIC Sans 60";
           }
           .home-link {
             text-decoration: underline;
@@ -991,7 +1027,7 @@ const Home = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
