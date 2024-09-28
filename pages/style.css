@@ -3,31 +3,31 @@
   font-style: normal;
   font-format: opentype;
   font-weight: 300;
-  src: url("/fonts/authenticsans-60.otf") ;
+  src: url("/fonts/authenticsans-60.otf");
 }
 :root {
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
   --dl-color-gray-800: #595959;
-  --dl-color-gray-900: #D9D9D9;
+  --dl-color-gray-900: #d9d9d9;
   --dl-size-size-large: 144px;
   --dl-size-size-small: 48px;
-  --dl-color-danger-300: #A22020;
-  --dl-color-danger-500: #BF2626;
-  --dl-color-danger-700: #E14747;
+  --dl-color-danger-300: #a22020;
+  --dl-color-danger-500: #bf2626;
+  --dl-color-danger-700: #e14747;
   --dl-color-gray-black: #000000;
-  --dl-color-gray-white: #FFFFFF;
+  --dl-color-gray-white: #ffffff;
   --dl-size-size-medium: 96px;
   --dl-size-size-xlarge: 192px;
   --dl-size-size-xsmall: 16px;
   --dl-space-space-unit: 16px;
-  --dl-color-primary-100: #003EB3;
-  --dl-color-primary-300: #0074F0;
-  --dl-color-primary-500: #14A9FF;
-  --dl-color-primary-700: #85DCFF;
+  --dl-color-primary-100: #003eb3;
+  --dl-color-primary-300: #0074f0;
+  --dl-color-primary-500: #14a9ff;
+  --dl-color-primary-700: #85dcff;
   --dl-color-success-300: #199033;
-  --dl-color-success-500: #32A94C;
-  --dl-color-success-700: #4CC366;
+  --dl-color-success-500: #32a94c;
+  --dl-color-success-700: #4cc366;
   --dl-size-size-xxlarge: 288px;
   --dl-size-size-maxwidth: 1400px;
   --dl-radius-radius-round: 50%;
@@ -92,7 +92,12 @@
   font-size: 2.5rem;
 }
 .heading3 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  /* font-family: "Raleway"; */
+  font-weight: 700;
+  /* text-transform: uppercase; */
 }
 .sectionTitle {
   font-size: 1rem;
@@ -123,7 +128,47 @@
   text-transform: none;
   text-decoration: none;
 }
-@media(max-width: 767px) {
+.button-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+button {
+  transition: 0.3s;
+}
+.button-secondary {
+  background-color: var(--dl-color-gray-black);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  color: var(--dl-color-gray-white);
+}
+
+.button-primary {
+  color: var(--dl-color-gray-black);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+
+.button-primary:hover {
+  color: var(--dl-color-gray-white);
+  background-color: var(--dl-color-gray-black);
+}
+
+.button-secondary:hover {
+  background-color: var(--dl-color-gray-white);
+  color: var(--dl-color-gray-black);
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
   .heading2 {
     font-size: 1.8rem;
   }
