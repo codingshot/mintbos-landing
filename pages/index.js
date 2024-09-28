@@ -170,9 +170,31 @@ const Home = (props) => {
               </span>
             </div>
             <div className="home-container3">
-              <div className="home-item main-app">
+              <div className="home-item">
+                <div className="home-container4">
+                  <span className="home-text heading3">
+                    📦 BOS SDK + Monorepo
+                  </span>
+                  <span className="home-free-plan-description">
+                    We are building a BOS based a UI Kit, and a BOS based SDK so
+                    people building front end marketplaces can add functianlity
+                    and their own themes across components.
+                  </span>
+                </div>
+                <a
+                  href="/docs"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-github button"
+                >
+                  Learn more
+                </a>
+              </div>
+              <div className="home-item2">
                 <div className="home-container6">
-                  <span className="heading3">🪞 Mintbase App</span>
+                  <span className="home-text2 heading3">
+                    🪞 Mintbase Feature Parity
+                  </span>
                   <span className="home-free-plan-description2">
                     We are building all of Mintbase.xyz feature on BOS
                     (decentralized + composable on-chain front ends). Using NEAR
@@ -181,90 +203,19 @@ const Home = (props) => {
                     storefronts.
                   </span>
                 </div>
-                <div className="button-area">
-                  <a
-                    href="/code"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="button-primary"
-                  >
-                    {/* See Features */}
-                    GitHub
-                  </a>
-
-                  <a
-                    href="/app"
-                    target="_blank"
-                    rel="norererrer nooopener"
-                    className="button-secondary"
-                  >
-                    Live App
-                  </a>
-                </div>
+                <a
+                  // href="/milestone2"
+                  href="/backlog"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-app1 button"
+                >
+                  See Features
+                </a>
               </div>
-              <div className="home-item marketplace-template">
-                {/*  Whitelabel marketplace template built with MintBOS on NEAR's decentralized front-end framework*/}
-                <div className="home-container4">
-                  <span className="heading3">🛠️ Marketplace Template</span>
-                  <span className="home-free-plan-description">
-                    A whitelabel marketplace template using BOS on NEAR's
-                    decentralized front-end framework. This will allow people to
-                    easily deploy their own marketplace with their own branding.
-                  </span>
-                </div>
-                <div className="button-area">
-                  <a
-                    href="/marketplace-template"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="button-secondary"
-                  >
-                    Use Template
-                  </a>
-                  <a
-                    href="/marketplace-demo"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="home-github button-primary"
-                  >
-                    Live(web4) Demo
-                  </a>
-                </div>
-              </div>
-              <div className="home-item mintbos-mini">
+              <div className="home-item1">
                 <div className="home-container5">
-                  <span className="heading3">🧊 MintBOS Mini</span>
-
-                  <span className="home-free-plan-description1">
-                    A stipped down version of MintBOS without theming, flexible
-                    styling classes, no nav or footer - an easy way for users
-                    who want to leverage tools like DAO functionalities and nft
-                    minters to build on top of what has been done by MintBOS
-                    team.
-                  </span>
-                </div>
-                <div className="button-area">
-                  <a
-                    href="/mini-code"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="button-secondary"
-                  >
-                    Use Mini
-                  </a>
-                  <a
-                    href="/mini"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="home-github button-primary"
-                  >
-                    Live Preview
-                  </a>
-                </div>
-              </div>
-              <div className="home-item">
-                <div className="home-container5">
-                  <span className="heading3">
+                  <span className="home-text1 heading3">
                     👋 Social + DAO + TG Functionality
                   </span>
                   <span className="home-free-plan-description1">
@@ -275,44 +226,15 @@ const Home = (props) => {
                     to our telegram DropWallet powered by metatransactions.
                   </span>
                 </div>
-                <div className="button-area">
-                  <a
-                    href="/backlog"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="button-secondary"
-                  >
-                    BOS up
-                  </a>
-                </div>
-              </div>
-              <div className="home-item">
-                <div className="home-container4">
-                  <span className="heading3">📦 BOS SDK + UI Kit</span>
-                  <span className="home-free-plan-description">
-                    We are building a BOS based a UI Kit, and a BOS based SDK so
-                    people building front end marketplaces can add functianlity
-                    and their own themes across components.
-                  </span>
-                </div>
-                <div className="button-area">
-                  <a
-                    href="/sdk-guide"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="button-secondary"
-                  >
-                    SDK Guide
-                  </a>
-                  <a
-                    href="/ui-kit"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="button-primary"
-                  >
-                    UI-Kit
-                  </a>
-                </div>
+                <a
+                  // href="/milestone3"
+                  href="/backlog"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-backlog button"
+                >
+                  BOS up
+                </a>
               </div>
             </div>
           </div>
@@ -694,7 +616,6 @@ const Home = (props) => {
             max-width: var(--dl-size-size-maxwidth);
             align-items: flex-start;
             justify-content: center;
-            flex-wrap: wrap;
           }
           .home-item {
             gap: var(--dl-space-space-twounits);
@@ -702,9 +623,8 @@ const Home = (props) => {
             height: var(--dl-size-size-small);
             display: flex;
             padding: var(--dl-space-space-threeunits);
-            max-width: 400px;
-            height: 350px;
-            min-width: 350px;
+            max-width: 450px;
+            min-height: 450px;
             align-items: flex-start;
             padding-top: var(--dl-space-space-twounits);
             border-color: #e087ff;
@@ -724,9 +644,36 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
+          .home-text {
+            color: rgb(255, 255, 255);
+            font-style: normal;
+            font-family: "Raleway";
+            font-weight: 300;
+            text-transform: uppercase;
+          }
           .home-free-plan-description {
             color: #c5d0ff;
             line-height: 1.6;
+          }
+          .home-github {
+            color: var(--dl-color-gray-white);
+            transition: 0.3s;
+            font-family: "AUTHENTIC Sans 60";
+            font-weight: bold;
+            border-color: #000000;
+            border-width: 0px;
+            padding-left: 1.5rem;
+            border-radius: 0px;
+            padding-right: 1.5rem;
+            text-decoration: none;
+            background-color: rgb(16, 18, 35);
+          }
+          .home-github:hover {
+            color: #000000;
+            border-color: rgba(0, 0, 0, 0.9);
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.9);
           }
           .home-item1 {
             gap: var(--dl-space-space-twounits);
@@ -1007,6 +954,18 @@ const Home = (props) => {
               flex-direction: column;
             }
             .home-item {
+              width: 100%;
+              max-width: 450px;
+              margin-right: 0px;
+              margin-bottom: var(--dl-space-space-twounits);
+            }
+            .home-item1 {
+              width: 100%;
+              max-width: 450px;
+              margin-right: 0px;
+              margin-bottom: var(--dl-space-space-twounits);
+            }
+            .home-item2 {
               width: 100%;
               max-width: 450px;
               margin-right: 0px;
