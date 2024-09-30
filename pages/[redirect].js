@@ -9,9 +9,9 @@ const RedirectLinks = {
   "/backlog": "https://github.com/orgs/GenaDrop/projects/2/views/2",
   "/docs":
     "https://mintbos.vercel.app/bos.genadrop.near/widget/Mintbase.App.Index?page=resources&tab=guide",
-  "/mini":
-    "https://mintbos.vercel.app/bos.genadrop.near/widget/Mintbase.Mini.Index",
-  "mini-code": "https://github.com/GenaDrop/genadrop-bos-monorepo/tree/main/apps/Mintbase/widget/Mintbase/Mini",
+  "/mini": "https://dev.near.org/bos.genadrop.near/widget/Mintbase.Mini.Index",
+  "mini-code":
+    "https://github.com/GenaDrop/genadrop-bos-monorepo/tree/main/apps/Mintbase/widget/Mintbase/Mini",
   "/marketplace-demo": "https://mintbos.testnet.page",
   "/marketplace-template":
     "https://github.com/NEARBuilders/mintbos-marketplace-template",
