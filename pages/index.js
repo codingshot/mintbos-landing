@@ -268,11 +268,10 @@ const Home = (props) => {
                     👋 Social + DAO + TG Functionality
                   </span>
                   <span className="home-free-plan-description1">
-                    We are leveraging BOS to easily enable DAO functionality for
-                    deploying + managing storefront, minting + buying NFTs. We
-                    are also using social DB to add social graph functionality
-                    to profiles + storefronts. We are also adding listing NFTs
-                    to our telegram DropWallet powered by metatransactions.
+                    We're using BOS for DAO-enabled storefront management and
+                    NFT operations. Social DB adds social features to profiles
+                    and storefronts. We're also integrating NFT listings into
+                    our DropWallet telegram, powered by metatransactions.
                   </span>
                 </div>
                 <div className="button-area">
@@ -1009,6 +1008,8 @@ const Home = (props) => {
             .home-item {
               width: 100%;
               max-width: 450px;
+              padding: var(--dl-space-space-oneandhalfunits)
+                var(--dl-space-space-unit);
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-twounits);
             }
