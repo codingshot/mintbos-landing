@@ -1,32 +1,127 @@
 import React from "react";
 import Head from "next/head";
 
+// Add this at the top of your file
+const caseStudies = [
+  {
+    name: "YEAR OF CHEF",
+    description: "Displaying NFT marketplace stats and multi-marketplace listing for their collection originally minted on Sharddog",
+    link: "https://near.social/bos.yearofchef.near/widget/Index",
+    image: "https://www.yearofchef.org/preview.png"
+  },
+  {
+    name: "Blackdragon Marketplace",
+    description: "Powered by Web4, another decentralized front end alternative to BOS",
+    link: "https://mintbos.testnet.page/",
+    image: "https://pbs.twimg.com/media/GJs3qlPasAAQFvV.jpg:large"
+  },
+  {
+    name: "Vegan Friends DAO Dashboard",
+    description: "Displaying NFTs integrated into DAO + Potlock functionality",
+    link: "https://app.vfdao.org",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHRGHekcSK8sV1VTjQJR7kcOpfA3Fl83UNJg&s"
+  },
+  {
+    name: "Cplanet",
+    description: "A hub for creatives on NEAR leveraging NFTs for displaying creative work",
+    link: "https://cplanet.org",
+    image: "https://cplanet.org/assets/logo.png"
+  },
+  {
+    name: "Sharddog Passport Mint",
+    description: "Proof of Attendance Scavenger Hunt Dashboard on NEAR leveraging Mintbase GraphQL API",
+    link: "https://passport.cplanet.org",
+    image: "https://pbs.twimg.com/media/F92AvOJW8AAzJDA.jpg:large"
+  }
+];
+
 const Home = (props) => {
   return (
-    <>
-      <div className="home-container">
-        <Head>
-          <title>Mintbos</title>
-          <meta
-            name="description"
-            content="Mintbase meets BOS. Decentralized front ends meets NFT infrastructure on NEAR."
-          />
-          <meta property="og:title" content="Mintbos" />
-          <meta
-            property="og:description"
-            content="Mintbase meets BOS. Decentralized front ends meets NFT infrastructure on NEAR."
-          />
-        </Head>
-        <div className="home-header">
-          <header data-thq="thq-navbar" className="home-navbar-interactive">
-            <img alt="image" src="/mintbos.svg" className="home-image" />
-            <div data-thq="thq-navbar-nav" className="home-desktop-menu">
-              <nav className="home-links">
+    <div className="home-container">
+      <Head>
+        <title>MintBOS - Decentralized NFT Infrastructure on NEAR</title>
+        <meta
+          name="description"
+          content="MintBOS integrates Mintbase's NFT infrastructure with NEAR Blockchain Operating System (BOS). Create, manage, and mint NFTs using decentralized front-ends with DAO and social features."
+        />
+        <meta property="og:title" content="MintBOS - Decentralized NFT Infrastructure on NEAR" />
+        <meta
+          property="og:description"
+          content="Create, manage, and mint NFTs on NEAR using decentralized front-ends with DAO and social features. MintBOS integrates Mintbase infrastructure with BOS."
+        />
+        <meta name="keywords" content="MintBOS, NEAR, NFT, Blockchain Operating System, Mintbase, DAO, decentralized front-end" />
+        <link rel="canonical" href="https://mintbase.genadrop.xyz" />
+      </Head>
+      <div className="home-header">
+        <header data-thq="thq-navbar" className="home-navbar-interactive">
+          <img alt="image" src="/mintbos.svg" className="home-image" />
+          <div data-thq="thq-navbar-nav" className="home-desktop-menu">
+            <nav className="home-links">
+              <a
+                href="/backlog"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-nav1"
+              >
+                Backlog
+              </a>
+              <a
+                href="/code"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-nav2"
+              >
+                Code
+              </a>
+              <a
+                href="/wallet"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-nav21"
+              >
+                TG Wallet
+              </a>
+            </nav>
+            <div className="home-buttons">
+              <a
+                href="/app"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-app button"
+              >
+                App
+              </a>
+              <a
+                href="/docs"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-register button"
+              >
+                Docs
+              </a>
+            </div>
+          </div>
+          <div data-thq="thq-burger-menu" className="home-burger-menu">
+            <svg fill="white" viewBox="0 0 1024 1024" className="home-icon">
+              <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" className="home-mobile-menu">
+            <div className="home-nav">
+              <div className="home-top">
+                <img src="/mintbos.svg" alt="image" className="home-image1" />
+                <div data-thq="thq-close-menu" className="home-close-menu">
+                  <svg viewBox="0 0 1024 1024" className="home-icon2">
+                    <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                  </svg>
+                </div>
+              </div>
+              <nav className="home-links1">
                 <a
                   href="/backlog"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-nav1"
+                  className="home-nav11"
                 >
                   Backlog
                 </a>
@@ -34,7 +129,7 @@ const Home = (props) => {
                   href="/code"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-nav2"
+                  className="home-nav22"
                 >
                   Code
                 </a>
@@ -42,323 +137,288 @@ const Home = (props) => {
                   href="/wallet"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-nav21"
+                  className="home-nav3"
                 >
                   TG Wallet
                 </a>
-              </nav>
-              <div className="home-buttons">
                 <a
-                  href="/app"
+                  href="https://mintbos.vercel.app/bos.genadrop.near/widget/Mintbase.App.Index?page=resources&tab=guide"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-app button"
+                  className="home-nav3"
                 >
-                  App
+                  Docs
                 </a>
+              </nav>
+              <div className="home-buttons1">
                 <a
-                  href="/docs"
+                  href="https://mintbos.vercel.app"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="home-register button"
                 >
-                  Docs
+                  App
                 </a>
               </div>
             </div>
-            <div data-thq="thq-burger-menu" className="home-burger-menu">
-              <svg fill="white" viewBox="0 0 1024 1024" className="home-icon">
-                <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-              </svg>
+          </div>
+        </header>
+      </div>
+      <div className="home-hero">
+        <div className="home-hero1">
+          <div className="home-container1">
+            <img alt="image" src="/mintbos.svg" className="home-image2" />
+            <span className="home-hero-sub-heading">
+              Decentralized front ends meets NFT infrastructure on NEAR
+            </span>
+            <div className="home-btn-group">
+              <a
+                href="https://github.com/GenaDrop/genadrop-bos-monorepo/tree/main/apps/Mintbase"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-hero-button1 button"
+              >
+                Fork
+              </a>
+              <a
+                href="https://github.com/orgs/GenaDrop/projects/2/views/2"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-hero-button2 button"
+              >
+                {" "}
+                Backlog →
+              </a>
             </div>
-            <div data-thq="thq-mobile-menu" className="home-mobile-menu">
-              <div className="home-nav">
-                <div className="home-top">
-                  <img src="/mintbos.svg" alt="image" className="home-image1" />
-                  <div data-thq="thq-close-menu" className="home-close-menu">
-                    <svg viewBox="0 0 1024 1024" className="home-icon2">
-                      <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                    </svg>
-                  </div>
-                </div>
-                <nav className="home-links1">
-                  <a
-                    href="/backlog"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="home-nav11"
-                  >
-                    Backlog
-                  </a>
-                  <a
-                    href="/code"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="home-nav22"
-                  >
-                    Code
-                  </a>
-                  <a
-                    href="/wallet"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="home-nav3"
-                  >
-                    TG Wallet
-                  </a>
-                  <a
-                    href="/docs"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="home-nav3"
-                  >
-                    Docs
-                  </a>
-                </nav>
-                <div className="home-buttons1">
-                  <a
-                    href="/app"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="home-register button"
-                  >
-                    App
-                  </a>
-                </div>
-              </div>
-            </div>
-          </header>
+          </div>
         </div>
-        <div className="home-hero">
-          <div className="home-hero1">
-            <div className="home-container1">
-              <img alt="image" src="/mintbos.svg" className="home-image2" />
-              <span className="home-hero-sub-heading">
-                Decentralized front ends meets NFT infrastructure on NEAR
-              </span>
-              <div className="home-btn-group">
+      </div>
+      <div className="home-pricing">
+        <div className="home-build-blocks">
+          <div className="home-container2">
+            <h2 className="home-build-heading heading2">
+              What We Are Building
+            </h2>
+            <span className="home-buld-subtitle">
+              How we are further decentralizing the Mintbase stack. (Note we
+              are still building and this is not live - check github)
+            </span>
+          </div>
+          <div className="home-container3">
+            <div className="home-item main-app">
+              <div className="home-container6">
+                <span className="heading3">🪞 Mintbase App</span>
+                <span className="home-free-plan-description2">
+                  We are building all of Mintbase.xyz feature on BOS
+                  (decentralized + composable on-chain front ends). Using NEAR
+                  APIs, our SDK, + UI kits, & Mintbase GraphQL we allow for
+                  people to explore + buy NFTs, see activity, and manage
+                  storefronts.
+                </span>
+              </div>
+              <div className="button-area">
                 <a
-                  href="/code"
+                  href="https://github.com/GenaDrop/genadrop-bos-monorepo/tree/main/apps/Mintbase"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-hero-button1 button"
+                  className="button-primary"
                 >
-                  Fork
+                  {/* See Features */}
+                  GitHub
                 </a>
+
+                <a
+                  href="https://mintbos.vercel.app"
+                  target="_blank"
+                  rel="norererrer nooopener"
+                  className="button-secondary"
+                >
+                  Live App
+                </a>
+              </div>
+            </div>
+            <div className="home-item marketplace-template">
+              {/*  Whitelabel marketplace template built with MintBOS on NEAR's decentralized front-end framework*/}
+              <div className="home-container4">
+                <span className="heading3">🛠️ Marketplace Template</span>
+                <span className="home-free-plan-description">
+                  A whitelabel marketplace template using BOS on NEAR's
+                  decentralized front-end framework. This will allow people to
+                  easily deploy their own marketplace with their own branding.
+                </span>
+              </div>
+              <div className="button-area">
+                <a
+                  href="https://github.com/NEARBuilders/mintbos-marketplace-template"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="button-secondary"
+                >
+                  Use Template
+                </a>
+                <a
+                  href="https://mintbos.testnet.page"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-github button-primary"
+                >
+                  Live(web4) Demo
+                </a>
+              </div>
+            </div>
+            <div className="home-item mintbos-mini">
+              <div className="home-container5">
+                <span className="heading3">🧊 MintBOS Mini</span>
+
+                <span className="home-free-plan-description1">
+                  A stipped down version of MintBOS without theming, flexible
+                  styling classes, no nav or footer - an easy way for users
+                  who want to leverage tools like DAO functionalities and nft
+                  minters to build on top of what has been done by MintBOS
+                  team.
+                </span>
+              </div>
+              <div className="button-area">
+                <a
+                  href="https://github.com/GenaDrop/genadrop-bos-monorepo/tree/main/apps/Mintbase/widget/Mintbase/Mini"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="button-secondary"
+                >
+                  Use Mini
+                </a>
+                <a
+                  href="https://near.social/bos.genadrop.near/widget/Mintbase.Mini.Index"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-github button-primary"
+                >
+                  Live Preview
+                </a>
+              </div>
+            </div>
+            <div className="home-item">
+              <div className="home-container5">
+                <span className="heading3">
+                  👋 Social + DAO + TG Functionality
+                </span>
+                <span className="home-free-plan-description1">
+                  We're using BOS for DAO-enabled storefront management and
+                  NFT operations. Social DB adds social features to profiles
+                  and storefronts. We're also integrating NFT listings into
+                  our DropWallet telegram, powered by metatransactions.
+                </span>
+              </div>
+              <div className="button-area">
                 <a
                   href="/backlog"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-hero-button2 button"
+                  className="button-secondary"
                 >
-                  {" "}
-                  Backlog →
+                  BOS up
+                </a>
+              </div>
+            </div>
+            <div className="home-item">
+              <div className="home-container4">
+                <span className="heading3">📦 BOS SDK + UI Kit</span>
+                <span className="home-free-plan-description">
+                  We are building a BOS based a UI Kit, and a BOS based SDK so
+                  people building front end marketplaces can add functianlity
+                  and their own themes across components.
+                </span>
+              </div>
+              <div className="button-area">
+                <a
+                  href="https://mintbos.vercel.app/bos.genadrop.near/widget/Mintbase.App.Index?page=resources&tab=sdk_guide"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="button-secondary"
+                >
+                  SDK Guide
+                </a>
+                <a
+                  href="https://mintbos.vercel.app/bos.genadrop.near/widget/Mintbase.UI-Kit"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="button-primary"
+                >
+                  UI-Kit
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div className="home-pricing">
-          <div className="home-build-blocks">
-            <div className="home-container2">
-              <h2 className="home-build-heading heading2">
-                What We Are Building
-              </h2>
-              <span className="home-buld-subtitle">
-                How we are further decentralizing the Mintbase stack. (Note we
-                are still building and this is not live - check github)
-              </span>
+      </div>
+      <div className="home-gallery"></div>
+      <div className="home-build-blocks">
+        <div className="home-container2">
+          <h2 className="home-build-heading heading2">
+            Case Studies
+          </h2>
+          <span className="home-buld-subtitle">
+            Explore how projects are leveraging MintBOS
+          </span>
+        </div>
+        <div className="home-container3">
+          {caseStudies.map((study, index) => (
+            <div key={index} className="home-item case-study-card">
+              <div className="case-study-image-container">
+                <img src={study.image} alt={study.name} className="case-study-image" />
+              </div>
+              <div className="case-study-content">
+                <h3 className="heading3">{study.name}</h3>
+                <p className="home-free-plan-description">{study.description}</p>
+                <a href={study.link} target="_blank" rel="noopener noreferrer" className="button-secondary">
+                  Live Demo
+                </a>
+              </div>
             </div>
-            <div className="home-container3">
-              <div className="home-item main-app">
-                <div className="home-container6">
-                  <span className="heading3">🪞 Mintbase App</span>
-                  <span className="home-free-plan-description2">
-                    We are building all of Mintbase.xyz feature on BOS
-                    (decentralized + composable on-chain front ends). Using NEAR
-                    APIs, our SDK, + UI kits, & Mintbase GraphQL we allow for
-                    people to explore + buy NFTs, see activity, and manage
-                    storefronts.
-                  </span>
-                </div>
-                <div className="button-area">
-                  <a
-                    href="/code"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="button-primary"
-                  >
-                    {/* See Features */}
-                    GitHub
-                  </a>
-
-                  <a
-                    href="/app"
-                    target="_blank"
-                    rel="norererrer nooopener"
-                    className="button-secondary"
-                  >
-                    Live App
-                  </a>
-                </div>
-              </div>
-              <div className="home-item marketplace-template">
-                {/*  Whitelabel marketplace template built with MintBOS on NEAR's decentralized front-end framework*/}
-                <div className="home-container4">
-                  <span className="heading3">🛠️ Marketplace Template</span>
-                  <span className="home-free-plan-description">
-                    A whitelabel marketplace template using BOS on NEAR's
-                    decentralized front-end framework. This will allow people to
-                    easily deploy their own marketplace with their own branding.
-                  </span>
-                </div>
-                <div className="button-area">
-                  <a
-                    href="/marketplace-template"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="button-secondary"
-                  >
-                    Use Template
-                  </a>
-                  <a
-                    href="/marketplace-demo"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="home-github button-primary"
-                  >
-                    Live(web4) Demo
-                  </a>
-                </div>
-              </div>
-              <div className="home-item mintbos-mini">
-                <div className="home-container5">
-                  <span className="heading3">🧊 MintBOS Mini</span>
-
-                  <span className="home-free-plan-description1">
-                    A stipped down version of MintBOS without theming, flexible
-                    styling classes, no nav or footer - an easy way for users
-                    who want to leverage tools like DAO functionalities and nft
-                    minters to build on top of what has been done by MintBOS
-                    team.
-                  </span>
-                </div>
-                <div className="button-area">
-                  <a
-                    href="/mini-code"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="button-secondary"
-                  >
-                    Use Mini
-                  </a>
-                  <a
-                    href="/mini"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="home-github button-primary"
-                  >
-                    Live Preview
-                  </a>
-                </div>
-              </div>
-              <div className="home-item">
-                <div className="home-container5">
-                  <span className="heading3">
-                    👋 Social + DAO + TG Functionality
-                  </span>
-                  <span className="home-free-plan-description1">
-                    We're using BOS for DAO-enabled storefront management and
-                    NFT operations. Social DB adds social features to profiles
-                    and storefronts. We're also integrating NFT listings into
-                    our DropWallet telegram, powered by metatransactions.
-                  </span>
-                </div>
-                <div className="button-area">
-                  <a
-                    href="/backlog"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="button-secondary"
-                  >
-                    BOS up
-                  </a>
-                </div>
-              </div>
-              <div className="home-item">
-                <div className="home-container4">
-                  <span className="heading3">📦 BOS SDK + UI Kit</span>
-                  <span className="home-free-plan-description">
-                    We are building a BOS based a UI Kit, and a BOS based SDK so
-                    people building front end marketplaces can add functianlity
-                    and their own themes across components.
-                  </span>
-                </div>
-                <div className="button-area">
-                  <a
-                    href="/sdk-guide"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="button-secondary"
-                  >
-                    SDK Guide
-                  </a>
-                  <a
-                    href="/ui-kit"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="button-primary"
-                  >
-                    UI-Kit
-                  </a>
-                </div>
-              </div>
+          ))}
+        </div>
+      </div>
+      <div className="home-footer">
+        <footer className="home-footer1">
+          <div className="home-container7">
+            <span className="home-text3">
+              <span>Built with ❤️  by</span>
+              <a
+                href="https://minorityprogrammers.org"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link"
+              >
+                {" "}
+                Minority Programmers
+              </a>
+              <span> + 💧 </span>
+              <a
+                href="https://genadrop.io"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link1"
+              >
+                GenaDrop
+              </a>
+            </span>
+            <div className="home-icon-group">
+              <a
+                href="/twitter"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link2"
+              >
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  className="home-icon4"
+                >
+                  <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
+                </svg>
+              </a>
             </div>
           </div>
-        </div>
-        <div className="home-gallery"></div>
-        <div className="home-footer">
-          <footer className="home-footer1">
-            <div className="home-container7">
-              <span className="home-text3">
-                <span>Built with ❤️  by</span>
-                <a
-                  href="https://minorityprogrammers.org"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="home-link"
-                >
-                  {" "}
-                  Minority Programmers
-                </a>
-                <span> + 💧 </span>
-                <a
-                  href="https://genadrop.io"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="home-link1"
-                >
-                  GenaDrop
-                </a>
-              </span>
-              <div className="home-icon-group">
-                <a
-                  href="/twitter"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="home-link2"
-                >
-                  <svg
-                    viewBox="0 0 950.8571428571428 1024"
-                    className="home-icon4"
-                  >
-                    <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </footer>
-        </div>
+        </footer>
       </div>
       <style jsx>
         {`
@@ -915,6 +975,51 @@ const Home = (props) => {
             margin-right: var(--dl-space-space-twounits);
             text-decoration: none;
           }
+          .case-study-card {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            min-height: 450px;
+          }
+
+          .case-study-image-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            margin-bottom: var(--dl-space-space-unit);
+          }
+
+          .case-study-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+          }
+
+          .case-study-image:hover {
+            transform: scale(1.05);
+          }
+
+          .case-study-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+          }
+
+          .case-study-card h3 {
+            color: #ffffff;
+            margin-bottom: var(--dl-space-space-halfunit);
+          }
+
+          .case-study-card p {
+            flex-grow: 1;
+          }
+
+          .case-study-card .button-secondary {
+            align-self: flex-start;
+            margin-top: var(--dl-space-space-unit);
+          }
           @media (max-width: 991px) {
             .home-hero1 {
               flex-direction: column;
@@ -1068,7 +1173,7 @@ const Home = (props) => {
           }
         `}
       </style>
-    </>
+    </div>
   );
 };
 
