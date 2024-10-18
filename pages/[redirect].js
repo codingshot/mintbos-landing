@@ -10,7 +10,7 @@ const RedirectLinks = {
   "/docs":
     "https://mintbos.vercel.app/bos.genadrop.near/widget/Mintbase.App.Index?page=resources&tab=guide",
   "/mini": "https://dev.near.org/bos.genadrop.near/widget/Mintbase.Mini.Index",
-  "mini-code":
+  "/mini-code":
     "https://github.com/GenaDrop/genadrop-bos-monorepo/tree/main/apps/Mintbase/widget/Mintbase/Mini",
   "/marketplace-demo": "https://mintbos.testnet.page",
   "/marketplace-template":
