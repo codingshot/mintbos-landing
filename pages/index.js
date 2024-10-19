@@ -44,12 +44,18 @@ const Home = (props) => {
           name="description"
           content="MintBOS integrates Mintbase's NFT infrastructure with NEAR Blockchain Operating System (BOS). Create, manage, and mint NFTs using decentralized front-ends with DAO and social features."
         />
-        <meta property="og:title" content="MintBOS - Decentralized NFT Infrastructure on NEAR" />
+        <meta
+          property="og:title"
+          content="MintBOS - Decentralized NFT Infrastructure on NEAR"
+        />
         <meta
           property="og:description"
           content="Create, manage, and mint NFTs on NEAR using decentralized front-ends with DAO and social features. MintBOS integrates Mintbase infrastructure with BOS."
         />
-        <meta name="keywords" content="MintBOS, NEAR, NFT, Blockchain Operating System, Mintbase, DAO, decentralized front-end" />
+        <meta
+          name="keywords"
+          content="MintBOS, NEAR, NFT, Blockchain Operating System, Mintbase, DAO, decentralized front-end"
+        />
         <link rel="canonical" href="https://mintbase.genadrop.xyz" />
       </Head>
       <div className="home-header">
@@ -200,8 +206,8 @@ const Home = (props) => {
               What We Are Building
             </h2>
             <span className="home-buld-subtitle">
-              How we are further decentralizing the Mintbase stack. (Note we
-              are still building and this is not live - check github)
+              How we are further decentralizing the Mintbase stack. (Note we are
+              still building and this is not live - check github)
             </span>
           </div>
           <div className="home-container3">
@@ -247,7 +253,7 @@ const Home = (props) => {
                   easily deploy their own marketplace with their own branding.
                 </span>
               </div>
-              <div className="button-area">
+              <div className="button-area button-area-special">
                 <a
                   href="https://github.com/NEARBuilders/mintbos-marketplace-template"
                   target="_blank"
@@ -272,10 +278,9 @@ const Home = (props) => {
 
                 <span className="home-free-plan-description1">
                   A stipped down version of MintBOS without theming, flexible
-                  styling classes, no nav or footer - an easy way for users
-                  who want to leverage tools like DAO functionalities and nft
-                  minters to build on top of what has been done by MintBOS
-                  team.
+                  styling classes, no nav or footer - an easy way for users who
+                  want to leverage tools like DAO functionalities and nft
+                  minters to build on top of what has been done by MintBOS team.
                 </span>
               </div>
               <div className="button-area">
@@ -303,10 +308,10 @@ const Home = (props) => {
                   👋 Social + DAO + TG Functionality
                 </span>
                 <span className="home-free-plan-description1">
-                  We're using BOS for DAO-enabled storefront management and
-                  NFT operations. Social DB adds social features to profiles
-                  and storefronts. We're also integrating NFT listings into
-                  our DropWallet telegram, powered by metatransactions.
+                  We're using BOS for DAO-enabled storefront management and NFT
+                  operations. Social DB adds social features to profiles and
+                  storefronts. We're also integrating NFT listings into our
+                  DropWallet telegram, powered by metatransactions.
                 </span>
               </div>
               <div className="button-area">
@@ -354,9 +359,7 @@ const Home = (props) => {
       <div className="home-gallery"></div>
       <div className="home-build-blocks">
         <div className="home-container2">
-          <h2 className="home-build-heading heading2">
-            Case Studies
-          </h2>
+          <h2 className="home-build-heading heading2">Case Studies</h2>
           <span className="home-buld-subtitle">
             Explore how projects are leveraging MintBOS
           </span>
@@ -365,12 +368,23 @@ const Home = (props) => {
           {caseStudies.map((study, index) => (
             <div key={index} className="home-item case-study-card">
               <div className="case-study-image-container">
-                <img src={study.image} alt={study.name} className="case-study-image" />
+                <img
+                  src={study.image}
+                  alt={study.name}
+                  className="case-study-image"
+                />
               </div>
               <div className="case-study-content">
                 <h3 className="heading3">{study.name}</h3>
-                <p className="home-free-plan-description">{study.description}</p>
-                <a href={study.link} target="_blank" rel="noopener noreferrer" className="button-secondary">
+                <p className="home-free-plan-description">
+                  {study.description}
+                </p>
+                <a
+                  href={study.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-secondary"
+                >
                   Live Demo
                 </a>
               </div>
@@ -652,7 +666,7 @@ const Home = (props) => {
             justify-content: flex-start;
           }
           .home-image2 {
-            width: 400px;
+            width: min(100%, 400px);
             object-fit: cover;
           }
           .home-hero-sub-heading {
@@ -763,7 +777,7 @@ const Home = (props) => {
             padding: var(--dl-space-space-threeunits);
             max-width: 400px;
             height: 350px;
-            min-width: 350px;
+            min-width: 300px;
             align-items: flex-start;
             padding-top: var(--dl-space-space-twounits);
             border-color: #e087ff;
